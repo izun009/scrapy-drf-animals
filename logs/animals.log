@@ -3729,3 +3729,1976 @@ INFO: Dumping Scrapy stats:
  'scheduler/enqueued/memory': 2796,
  'start_time': datetime.datetime(2023, 11, 2, 15, 44, 56, 472061, tzinfo=datetime.timezone.utc)}
 INFO: Spider closed (closespider_itemcount)
+INFO: Scrapy 2.11.0 started (bot: animals_api)
+INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0], pyOpenSSL 23.3.0 (OpenSSL 3.1.4 24 Oct 2023), cryptography 41.0.5, Platform Linux-5.15.123.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+INFO: Scrapy 2.11.0 started (bot: animals_api)
+INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0], pyOpenSSL 23.3.0 (OpenSSL 3.1.4 24 Oct 2023), cryptography 41.0.5, Platform Linux-5.15.123.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+INFO: Scrapy 2.11.0 started (bot: animals_api)
+INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0], pyOpenSSL 23.3.0 (OpenSSL 3.1.4 24 Oct 2023), cryptography 41.0.5, Platform Linux-5.15.123.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+INFO: Enabled addons:
+[]
+DEBUG: Using selector: EpollSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+INFO: Telnet Password: fcaafa57bd95ac14
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.closespider.CloseSpider',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Overridden settings:
+{'BOT_NAME': 'animals_api',
+ 'CLOSESPIDER_ITEMCOUNT': 5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'animals_api.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['animals_api.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; rv:102.0) Gecko/20100101 '
+               'Firefox/102.0'}
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+['animals_api.pipelines.MongoDBPipeline']
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://a-z-animals.com/robots.txt> (referer: None)
+DEBUG: Redirecting (301) to <GET https://a-z-animals.com/animals/> from <GET https://a-z-animals.com/animals>
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/> (referer: None)
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/aardvark/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/aardvark/>
+{'facts': [{'description': 'Aardvarks are small pig-like mammals that are '
+                           'found inhabiting a wide range of different '
+                           'habitats throughout Africa, south of the Sahara. '
+                           'They are mostly solitary and spend their days '
+                           'sleeping in underground burrows to protect '
+                           'themselves from the heat of the African sun, '
+                           'emerging in the cooler evening to search for food. '
+                           'Their name originates from the Afrikaans language '
+                           'in South Africa and means Earth Pig due to their '
+                           'long snout and pig-like body. Aardvarks are unique '
+                           'among animals as they are the only surviving '
+                           'species in their animal family. Until recently, it '
+                           'was widely believed that they were most closely '
+                           'related to other insectivores, such as armadillos '
+                           'and pangolins. However, this is not the case with '
+                           'their closest living relatives actually thought to '
+                           'be elephants.',
+            'fact': 'Classification'},
+           {'description': 'Aardvarks have a unique appearance among mammals '
+                           '(and indeed all animals) as they display the '
+                           'physical characteristics of a number of different '
+                           'animal species. They have medium-sized, almost '
+                           'hairless bodies and long snouts that make them '
+                           'look distinctly pig-like at first, with thick skin '
+                           'that both protects them from the hot sun and also '
+                           'from being harmed by insect bites. They are able '
+                           'to close their nostrils to stop dust and insects '
+                           'from entering their nose. They have tubular, '
+                           'rabbit-like ears that can stand on end but can '
+                           'also be folded flat to prevent dirt from entering '
+                           'them when they are underground. Aardvarks have '
+                           'strong claws on each of their spade-like feet '
+                           'that, along with the fact that their hind legs are '
+                           'longer than their front legs, make them strong and '
+                           'capable diggers able to excavate vast amounts of '
+                           'earth at an alarming rate. Due to the fact that '
+                           'they spend most of their lives underground or out '
+                           'hunting in the dark at night, they have poor '
+                           'eyesight but are able to easily navigate their '
+                           'surrounding using their excellent sense of smell '
+                           'to both find prey and sense potential danger.',
+            'fact': 'Anatomy and Appearance'},
+           {'description': 'Aardvarks are found in a wide variety of different '
+                           'habitats throughout sub-Saharan Africa, from dry '
+                           'deserts to moist rainforest regions. The only '
+                           'stipulation (other than having good access to '
+                           'plenty of food and water) is to have good soil in '
+                           'which they can dig their extensive burrows. '
+                           'Despite being highly skilled at digging in sandy '
+                           'or clay soil types, rockier regions prove more of '
+                           'a challenge to create their underground homes, so '
+                           'the aardvark will move to another area where soil '
+                           'conditions are better suited to digging. Their '
+                           'burrows can be up to 33 feet long in a home range '
+                           'that can be anywhere from one to two square miles. '
+                           'Their burrows often have multiple entrances and '
+                           'are always left head first, so they are able to '
+                           'identify potential predators easily using their '
+                           'keen sense of smell.',
+            'fact': 'Distribution and Habitat'},
+           {'description': 'Aardvarks are mainly solitary animals that come '
+                           'together only to mate and are never found in large '
+                           'groups. They live in underground burrows to '
+                           'protect them both from the hot daytime sun and '
+                           'from predators. Aardvarks are nocturnal mammals, '
+                           'only leaving the safety of the burrow under the '
+                           'cover of night when they go in search of food and '
+                           'water, often traveling several miles in order to '
+                           'find the biggest termite mounds guided by their '
+                           'excellent hearing and sense of smell. Despite '
+                           'often having a large burrow comprised of an '
+                           'extensive network of tunnels, aardvarks are also '
+                           'known to be able to quickly excavate small '
+                           'temporary burrows where they can protect '
+                           'themselves quickly rather than having to return to '
+                           'their original dwelling.',
+            'fact': 'Behavior and Lifestyle'},
+           {'description': 'Aardvarks have specific mating seasons that occur '
+                           'every year. Depending on the region in which the '
+                           'aardvark lives, young can be born either in '
+                           'October to November or May to June in other areas. '
+                           'Known to have babies most years, female aardvarks '
+                           'give birth to a single offspring after a gestation '
+                           'period that usually lasts for around seven months. '
+                           'Newborn aardvarks often weigh as little as four '
+                           'pounds and are born with hairless, pink skin in '
+                           'the safety of their mother’s burrow. Baby '
+                           'aardvarks spend the first two weeks of their lives '
+                           'in the safety of the underground burrow before '
+                           'beginning to venture out with their mother under '
+                           'the cover of night. However, despite accompanying '
+                           'their mother in search of food, they aren’t weaned '
+                           'until they are around three months old. Young '
+                           'aardvarks live with their mother in her burrow '
+                           'until they are around six months old, when they '
+                           'move out to dig a burrow of their own. Although '
+                           'their lifespan in the wild is not entirely clear, '
+                           'aardvarks tend to live for more than 20 years in '
+                           'captivity.',
+            'fact': 'Reproduction and Life Cycles'},
+           {'description': 'The diet of aardvarks is mainly comprised of ants '
+                           'and termites, with termites being their preferred '
+                           'food source. Despite this, they are known to also '
+                           'eat other insects, such as beetles and insect '
+                           'larvae. Aardvarks are built to be insectivores '
+                           'with strong limbs and claws that are capable of '
+                           'breaking into the harder outer shell of termite '
+                           'mounds very efficiently. Once they have broken '
+                           'into the mound, they then use their long, sticky '
+                           'tongue to harvest the insects inside and eat them '
+                           'whole without chewing as they are then ground down '
+                           'in their muscular stomachs. One of the aardvark’s '
+                           'most distinctive features is the fact that they '
+                           'have columnar cheek teeth that serve no functional '
+                           'purpose at all. With some larger ant species that '
+                           'need to be chewed, they use the incisors that are '
+                           'located towards the back of their mouths. '
+                           'Aardvarks are also able to use the same techniques '
+                           'to break into underground ant nests.',
+            'fact': 'Diet and Prey'},
+           {'description': 'Despite the fact that aardvarks are nocturnal '
+                           'animals that live in the safety of underground '
+                           'burrows, they are threatened by a number of '
+                           'different predators throughout their natural '
+                           'environment. Lions, leopards, hyenas, and large '
+                           'snakes (most notably pythons) are the main '
+                           'predators of aardvark, but this does vary '
+                           'depending on where the aardvark lives. Their main '
+                           'form of defense is to escape very quickly '
+                           'underground. However, they are also known to be '
+                           'quite aggressive when threatened by these larger '
+                           'animals. Aardvarks use their strong, sharp claws '
+                           'to try and injure their attacker, along with '
+                           'kicking the threatening animal with their powerful '
+                           'back legs. Aardvarks are also threatened by humans '
+                           'who hunt them and destroy their natural habitats.',
+            'fact': 'Predators and Threats'},
+           {'description': 'Aardvarks use their long, sticky tongue to lap up '
+                           'to 50,000 insects a night from inside termite '
+                           'mounds or underground ant nests. Their worm-like '
+                           'tongues can actually grow up to 30 cm in length, '
+                           'meaning they can reach more termites further into '
+                           'the mound. Their love of insects has actually led '
+                           'to aardvarks being called Antbears! Interestingly '
+                           'enough, aardvarks are also thought to get almost '
+                           'all of the moisture they need from their prey, '
+                           'meaning that they actually have to physically '
+                           'drink very little water. Aardvarks are thought to '
+                           'be one of the world’s most prolific diggers, with '
+                           'their strong limbs and claws and shovel-like feet '
+                           'helping them to be able to shift two feet of soil '
+                           'in just 15 seconds!',
+            'fact': 'Interesting Facts and Features'},
+           {'description': 'Due to the fact that they spend the daytime hours '
+                           'hidden in the safety of their underground burrows, '
+                           'only emerging under the cover of night to hunt for '
+                           'food, aardvarks are very seldom seen by many '
+                           'people. In some regions, though, they are hunted '
+                           'by people for food and are becoming increasingly '
+                           'affected by expanding human populations as more of '
+                           'their natural habitats disappear to make way for '
+                           'growing settlements.',
+            'fact': 'Relationship with Humans'},
+           {'description': 'Today, aardvarks are listed by the IUCN as a '
+                           'species that is of Least Concern. Despite the fact '
+                           'that population numbers of aardvarks most '
+                           'certainly declined in some countries, in others, '
+                           'their numbers remain stable, and they are often '
+                           'commonly found in both protected areas and regions '
+                           'with suitable habitats. They are becoming '
+                           'increasingly affected by habitat loss in both the '
+                           'form of deforestation and expanding towns and '
+                           'villages. Due to their incredibly elusive nature, '
+                           'exact population sizes are not fully understood.',
+            'fact': 'Conservation Status and Life Today'}],
+ 'image_urls': ['https://a-z-animals.com/media/animals/images/original/aardvark.jpg'],
+ 'name': 'Aardvark'}
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/american-pygmy-goat/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/american-pygmy-goat/>
+{'facts': [{'description': 'The scientific name for these goats is Capra '
+                           'aegagrus hircus.',
+            'fact': '5 Incredible American Pygmy Goat Facts!'},
+           {'description': 'The scientific name for these goats is Capra '
+                           'aegagrus hircus.',
+            'fact': 'Scientific Name'},
+           {'description': 'These goats get their small size from '
+                           'achondroplasia, the gene mutation that causes '
+                           'dwarfism, characterized by a normal-sized torso '
+                           'with short limbs and a larger head. They come in '
+                           'three color classifications: Caramel, Agouti, and '
+                           'Black. Agouti, if you don’t know, means that each '
+                           'hair has bands of at least two separate pigments '
+                           'on each strand, though it can be more. This '
+                           'produces a somewhat speckled appearance to the '
+                           'fur.',
+            'fact': 'Appearance'},
+           {'description': 'These goats love jumping and climbing. They are '
+                           'very playful, quite social, and are known for '
+                           'being friendly and also curious creatures. This '
+                           'curiosity is where they get their reputation for '
+                           'eating everything. While they eat a wide variety '
+                           'of plants and grains, they nibble things because '
+                           'of their investigation technique. They bite things '
+                           'to find out the nature of them.',
+            'fact': 'Behavior'},
+           {'description': 'Goats are very adaptable creatures, so they can '
+                           'easily live in many different habitats and '
+                           'climates. Though in the United States, they are '
+                           'often found on farmland, their native roaming '
+                           'grounds tend to be rocky hillsides and grassy '
+                           'plains. Any terrain with both rocks and edible '
+                           'grasses, which also has a nearby water source, is '
+                           'ideal for goats to thrive.',
+            'fact': 'Habitat'},
+           {'description': 'Their primary diet consists of green grasses and '
+                           'grains, but they also eat things like apples and '
+                           'carrots. They do well with hay, alfalfa, chaff, '
+                           'corn, and other grains, with some mint and '
+                           'fenugreek for variety.',
+            'fact': 'Diet'},
+           {'description': 'The main animals from which pygmy goats, and baby '
+                           'pygmy goats, in particular, are at risk are '
+                           'coyotes and dogs. Due to a baby goat’s small size, '
+                           'and depending on where the goat lives, it may fall '
+                           'victim to bobcats, birds of prey, and foxes.',
+            'fact': 'Predators And Threats'},
+           {'description': 'Though most farmers don’t breed them until they '
+                           'reach about one year of age, an American Pygmy '
+                           'Goat can reach sexual maturity as early as two '
+                           'months of age. These animals have a gestation '
+                           'period of around five months or about 150 days. '
+                           'Unlike many other species, American pygmy goats '
+                           'can breed year-round. These goats have one to four '
+                           'baby goats or “kids” per live birth. Until the '
+                           'kids are weaned, the mother spends several weeks '
+                           'raising them. The mothers care for their young '
+                           'without fatherly assistance. American Pygmy Goats '
+                           'have a lifespan of up to 12 years.',
+            'fact': 'Reproduction And Life Cycle'},
+           {'description': 'Because these goats are often found in zoos and on '
+                           'farms, their population appears to be thriving and '
+                           'has not been assessed for risk. Their exact '
+                           'population in the wild is unknown, but in the '
+                           'United States, they are found on many farms and in '
+                           'zoos all across the country.',
+            'fact': 'Population'}],
+ 'image_urls': ['https://a-z-animals.com/media/2021/05/American-Pygmy-Goat-header.jpg'],
+ 'name': 'American Pygmy Goat'}
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/american-staffordshire-terrier/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/american-staffordshire-terrier/>
+{'facts': [{'description': 'For centuries, the Bulldog and different terrier '
+                           'breeds were developed and used in blood sports in '
+                           'Great Britain. These activities have since been '
+                           'outlawed, but they have left us with many of the '
+                           'popular dog breeds that we know and love today, '
+                           'such as the Bulldog, Bull Terrier, and American '
+                           'Staffordshire Terrier. It is unclear exactly which '
+                           'terrier breeds were involved in creating the '
+                           'AmStaff, but it is known that they were created by '
+                           'combining the powerful jaws of the Bulldog with '
+                           'the courage of the terriers.',
+            'fact': '3 Pros and Cons of Owning an American Staffordshire '
+                    'Terrier'},
+           {'description': 'The American Staffordshire Terrier is a medium '
+                           'short-hair terrier with an average height of 19″ '
+                           'for males and 18″ for female dogs. Fully-grown '
+                           'males weigh about 70 pounds, while fully-grown '
+                           'females weigh 55 pounds on average. AmStaff '
+                           'puppies weigh about 19 pounds at eight weeks and '
+                           'will reach their full size by about three years.',
+            'fact': 'Size and Weight'},
+           {'description': 'The Staffy is susceptible to a few health '
+                           'problems. Elbow dysplasia is one of the most '
+                           'common issues that these dogs might face, '
+                           'impacting their mobility over the longer term. '
+                           'Hypothyroidism can lead to excessive weight gain '
+                           'and decreased activity, making your dog more '
+                           'likely to experience additional health problems. '
+                           'Heart disease is another condition that these dogs '
+                           'are unfortunately prone to developing. Lastly, '
+                           'these dogs can develop progressive retinal '
+                           'atrophy, an eye disease that can lead to vision '
+                           'loss. These issues are relatively easy enough to '
+                           'diagnose with regular veterinary care. In short, '
+                           'the most common issues that American Staffordshire '
+                           'Terriers might experience include:',
+            'fact': 'Common Health Issues'},
+           {'description': 'American Staffordshire Terriers are well-known for '
+                           'their confident, good-natured temperament, as well '
+                           'as intelligence. Their good nature makes them '
+                           'perfect companions for all activities that take '
+                           'place in your household. These dogs like mental '
+                           'challenges that keep their minds busy. These dogs, '
+                           'like most breeds, live up to their scientific name '
+                           'of canus lupus familiaris when given the chance to '
+                           'indulge their outdoorsy side.',
+            'fact': 'Temperament'},
+           {'description': 'New pet owners who want to bring an AmStaff into '
+                           'their life will need to keep a few important '
+                           'matters in mind. From the time they are puppies '
+                           'all the way through adulthood, they will require '
+                           'training, plenty of physical stimulation, and '
+                           'attention to health needs.',
+            'fact': 'Care'},
+           {'description': 'American Staffordshire Terrier puppies, in '
+                           'particular, have dietary needs that are suited to '
+                           'their strong builds. Choosing food that helps '
+                           'these dogs grow and develop well is key to your '
+                           'dog’s health throughout life.',
+            'fact': 'The Best Dog Food'},
+           {'description': 'AmStaffs are good with children, having an energy '
+                           'level that allows them to keep up with kids’ '
+                           'demands. However, their large size makes '
+                           'supervision during play necessary to avoid the '
+                           'risk of injury.',
+            'fact': 'American Staffordshire Terrier and Children'},
+           {'description': 'Some other breeds similar to the American '
+                           'Staffordshire Terrier include the American Pit '
+                           'Bull Terrier, Staffordshire Bull Terrier, and '
+                           'American Bulldog, all of which share a common '
+                           'scientific name.',
+            'fact': 'Dogs similar to American Staffordshire Terriers'},
+           {'description': 'Pete, of Little Rascals fame, was probably the '
+                           'most famous American Staffordshire Terrier that '
+                           'ever lived. Another famous dog of this breed was '
+                           'Stubby, the 102 Infantry Regiment mascot that '
+                           'served with the U.S. Army in World War I.',
+            'fact': 'Famous American Staffordshire Terrier'},
+           {'description': 'Popular names for American Staffordshire Terriers '
+                           'include:',
+            'fact': 'Popular Names'}],
+ 'image_urls': ['https://a-z-animals.com/media/2019/11/shutterstock_242094418.jpg'],
+ 'name': 'American Staffordshire Terrier'}
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/american-pit-bull-terrier/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/american-pit-bull-terrier/>
+{'facts': [{'description': 'Historians debate the exact origins of the modern '
+                           'American Pit Bull Terrier, but it is clear that '
+                           'this breed has been around since at least the '
+                           '1500s. Originally used for boar hunting and '
+                           'companionship, they were given the name “Bull '
+                           'Dogs” due to their popularity in the cruel sport '
+                           'of bull baiting. After this was outlawed in 1835, '
+                           'dog fighting promoters looked for other ways to '
+                           'make money, introducing different terrier strains '
+                           'to improve their prey drive, aggression, size, and '
+                           'agility.',
+            'fact': '3 Pros and Cons of Owning an American Pit Bull Terrier'},
+           {'description': 'American pit bull terriers are medium-sized dogs '
+                           'that have a strong build. The female American pit '
+                           'bull terriers are about 17 to 20 inches in size '
+                           'while the males are about 18 to 21 inches.',
+            'fact': 'Size and Weight'},
+           {'description': 'American pit bull terriers tend to be at risk for '
+                           'many common issues that exist in dogs of their '
+                           'stature. One of the most common conditions is hip '
+                           'dysplasia, which occurs when there are '
+                           'abnormalities in the development of the hip bones '
+                           'and connecting muscles.',
+            'fact': 'Common Health Issues'},
+           {'description': 'The American pit bull terrier is known to be '
+                           'protective in its temperament, especially towards '
+                           'children, and is also known for its playful '
+                           'nature. It makes a great and friendly family and '
+                           'companion dog. They are known for their courageous '
+                           'and clownish temperament, which is why so many '
+                           'owners push to make their peaceful nature more '
+                           'publicized. However, when provoked or when their '
+                           'owner is in danger, it is possible for them to '
+                           'show aggression.',
+            'fact': 'Temperament'},
+           {'description': 'For anyone that wants to own an American pit bull '
+                           'terrier, you need to be fully prepared for the '
+                           'road ahead. Regardless of whether you purchase a '
+                           'pup from a breeder or adopt one from a shelter, '
+                           'these dogs need some TLC, so here’s some tips on '
+                           'the best ways to feed, groom, and train them.',
+            'fact': 'Care'},
+           {'description': 'Like any other dog, always stay away from pork, '
+                           'grapes, onions, garlic, and similar foods. These '
+                           'foods can be incredibly dangerous for their '
+                           'digestive system.',
+            'fact': 'The Best Dog Food'},
+           {'description': 'American pit bull terriers are great towards '
+                           'children, earning them the nickname “nanny dog” in '
+                           'the past. They tend to be relatively protective of '
+                           'children in their owner’s family, showing off '
+                           'their playful nature around them. Their clownish '
+                           'nature helps to engage children, which is why they '
+                           'make great family and companion dogs.',
+            'fact': 'American Pit Bull Terriers and Children'},
+           {'description': 'Since the American pit bull terrier is not for '
+                           'everyone, people who want to have a similar pet '
+                           'may be interested in one of the following dogs '
+                           'instead.',
+            'fact': 'Dogs Similar to American Pit Bull Terriers'},
+           {'description': 'The lovable smile and disposition of the American '
+                           'pit bull terrier have given them a place in the '
+                           'hearts and homes of many celebrities. Kaley Cuoco, '
+                           'Jessica Alba, and Jennifer Aniston have all voiced '
+                           'their support for this breed by adopting American '
+                           'pit bull terriers of their own.',
+            'fact': 'Famous American Pit Bull Terriers'},
+           {'description': 'Here are a few common names for American pit bull '
+                           'terriers:',
+            'fact': 'Popular Names'}],
+ 'image_urls': ['https://a-z-animals.com/media/american-pit-bull-terrier-5.jpg'],
+ 'name': 'American Pit Bull Terrier'}
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/american-toad/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/american-toad/>
+{'facts': [{'description': 'The American toads go by the scientific name '
+                           'Anaxyrus americanus. The kingdom is called '
+                           'Animalia and the Phylum is Chordata. The class is '
+                           'Amphibia, and the order is Anura. The family is '
+                           'called Bufonidae, and the genus is Anaxyrus. The '
+                           'species is called A. americanus.',
+            'fact': '5 Incredible American Toad Facts!'},
+           {'description': 'The American toads go by the scientific name '
+                           'Anaxyrus americanus. The kingdom is called '
+                           'Animalia and the Phylum is Chordata. The class is '
+                           'Amphibia, and the order is Anura. The family is '
+                           'called Bufonidae, and the genus is Anaxyrus. The '
+                           'species is called A. americanus.',
+            'fact': 'Scientific Name'},
+           {'description': 'American toads have short legs and stout bodies '
+                           'like many other variations of this type of '
+                           'amphibian. However, one of the interesting facts '
+                           'about this specific creature is that they have '
+                           'warts that produce a milky liquid that is highly '
+                           'poisonous. Often red or yellow, warts decorate the '
+                           'toads’ thick skin, serving as one of their many '
+                           'adaptations to protect them from the predators '
+                           'that hunt them.',
+            'fact': 'Appearance'},
+           {'description': 'American toads are nocturnal, preferring to be the '
+                           'most active when the weather is humid and warm. '
+                           'These toads are solitary and only come together at '
+                           'breeding ponds, which happens in the late spring '
+                           'and early summer months. During the day, American '
+                           'toads are known to hide under rocks or logs. They '
+                           'also dig into the soil and dead leaves. In winter, '
+                           'they dig back into their summer homes or find new '
+                           'places to hibernate.',
+            'fact': 'Behavior'},
+           {'description': 'The American toad has three subspecies – the rare '
+                           'Hudson Bay toad, the eastern American toad, and '
+                           'the dwarf American toad. As for habitat, for early '
+                           'development, the American toads need a '
+                           'semi-permanent pool or pond for their early '
+                           'development.',
+            'fact': 'Habitat'},
+           {'description': 'Adult American toads are carnivorous. However, '
+                           'toad tadpoles are herbivorous, and their diet '
+                           'usually consists of aquatic vegetation and algae. '
+                           'The adults eat a wide variety of insects and other '
+                           'invertebrates. They usually feed on slugs, '
+                           'beetles, snails, and earthworms. They are known '
+                           'for their dietary adaptations as well, working '
+                           'with the available nutrients around them.',
+            'fact': 'Diet'},
+           {'description': 'The major predator of these toads is the snake. '
+                           'Eastern hognose snakes particularly enjoy a diet '
+                           'that is rich in toads. Some snakes are even immune '
+                           'to the poisonous glands of these toads, making '
+                           'them even easier to indulge in. When the toads '
+                           'encounter predators, who are immune to the '
+                           'poisonous liquid they produce, they urinate on '
+                           'themselves to make a less attractive meal for the '
+                           'predator. It may also inflate its body with air so '
+                           'that it becomes more difficult for the snake to '
+                           'swallow.',
+            'fact': 'Predators and Threats'},
+           {'description': 'The breeding season of these toads happens in '
+                           'March or April when the mild spring season is '
+                           'beginning to fade. It may sometimes also extend to '
+                           'July, though it will end before the peak of '
+                           'summertime. The breeding capacities of the toads '
+                           'are usually triggered by warm temperatures and '
+                           'longer days, but there are many adaptations they '
+                           'can make to survive.',
+            'fact': 'Reproduction and Life Cycle'},
+           {'description': 'While the exact population of these toads is not '
+                           'known, it is believed that they do not have '
+                           'special conservation status. Their population '
+                           'tends to fluctuate greatly, driven by how well the '
+                           'young survive. They fall in the least concerned '
+                           'category and continue to thrive in most '
+                           'environments and most of their ranges.',
+            'fact': 'Population'}],
+ 'image_urls': ['https://a-z-animals.com/media/2021/05/American-Toad-header.jpg'],
+ 'name': 'American Toad'}
+INFO: Closing spider (closespider_itemcount)
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/american-wirehair/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/american-pugabull/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/american-wirehair/>
+{'facts': [{'description': 'While their hair is wild and rough, their '
+                           'personality is the exact opposite. American '
+                           'wirehairs enjoy lots of attention and affection '
+                           'and have a playful nature; however, they are not '
+                           'too needy. In addition, they are loyal to a fault, '
+                           'making them great family pets.',
+            'fact': 'American Wirehair Facts'},
+           {'description': 'While their hair is wild and rough, their '
+                           'personality is the exact opposite. American '
+                           'wirehairs enjoy lots of attention and affection '
+                           'and have a playful nature; however, they are not '
+                           'too needy. In addition, they are loyal to a fault, '
+                           'making them great family pets.',
+            'fact': 'American Wirehair Personality'},
+           {'description': 'American Wirehairs are medium to large-sized cats, '
+                           'usually 8 to 10 inches high and 11 to 13 inches '
+                           'long, with muscular bodies generally weighing '
+                           'between 8 to 15 pounds. The males weigh between 12 '
+                           'to 15 pounds, while the females weigh around 8 to '
+                           '12 pounds. They are very similar in stature to the '
+                           'following cats:',
+            'fact': 'American Wirehair Size and Weight'},
+           {'description': 'While they are fairly well-known, American '
+                           'Wirehairs are pretty rare, so when purchasing one '
+                           'from a breeder, you can expect to pay between $800 '
+                           'to $1,200. However, you can find them in shelters, '
+                           'where they are much more affordable. Prices range '
+                           'from $75 to $150.',
+            'fact': 'American Wirehair Price'},
+           {'description': 'These kittens are easily trainable, easy to groom, '
+                           'and very friendly. American Wirehair kittens get '
+                           'along well with other pets and are friendly '
+                           'towards strangers. These kittens are independent; '
+                           'however, they also like affection.',
+            'fact': 'American Wirehair Kittens'},
+           {'description': 'American Wirehairs can live up to 14 to 18 years '
+                           'old with the proper diet and exercise regimen. '
+                           'However, they are prone to obesity, which can lead '
+                           'to diabetes, arthritis, and other illnesses.',
+            'fact': 'American Wirehair Lifespan'},
+           {'description': 'American Wirehairs have some unique features which '
+                           'set them apart from other breeds. Firstly, their '
+                           'coats are dense and kinky. While most cats have '
+                           'silky soft hair, American Wirehair’s coats have a '
+                           'rough texture and crimped appearance.',
+            'fact': 'American Wirehair Breed vs. Mixed'},
+           {'description': 'Cat lovers are spoiled for choice when it comes to '
+                           'American Wirehair’s color and patterns, which '
+                           'include:',
+            'fact': 'Types of American Wirehair Cats and Colors'},
+           {'description': 'Several cats are similar to the American Wirehair. '
+                           'This could be in size, weight, temperament, or '
+                           'social traits.',
+            'fact': 'Cat Breeds Similar to the American Wirehair'}],
+ 'image_urls': ['https://a-z-animals.com/media/2022/07/shutterstock_648376885.jpg'],
+ 'name': 'American Wirehair'}
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/american-pugabull/>
+{'facts': [{'description': 'There are many types of Pug and ABD mixes that '
+                           'come in an array of sizes, colors, and '
+                           'personalities; they include:',
+            'fact': 'The 10 Different Types of Pug and Bulldog Mixes'},
+           {'description': 'Feeding your American Pugabull with high-quality '
+                           'dog food is the best choice you can make for your '
+                           'furry companion. Because they are medium-sized '
+                           'dogs with a moderate energy level, they need '
+                           'nutrients that will keep them going for years.',
+            'fact': 'Three Pros and Cons of Owning an American Pugabull'},
+           {'description': 'Feeding your American Pugabull with high-quality '
+                           'dog food is the best choice you can make for your '
+                           'furry companion. Because they are medium-sized '
+                           'dogs with a moderate energy level, they need '
+                           'nutrients that will keep them going for years.',
+            'fact': 'The Best Dog Food For American Pugabulls'},
+           {'description': 'Because they are a mix of two very different '
+                           'breeds, the American Pugabull’s size and weight '
+                           'can vary depending on what genes they inherit from '
+                           'their parents.',
+            'fact': 'American Pugabull \xa0Size and Weight'},
+           {'description': 'Unfortunately, because of the American Puagabull’s '
+                           'flattened face, they are prone to respiratory '
+                           'issues. Other health risks include:',
+            'fact': 'American Pugabull Common Health Issues'},
+           {'description': 'The American Pugabull is energetic, loving, loyal, '
+                           'protective, vigilant, and brave. Of course, they '
+                           'get their energy from the Pug, but generally, they '
+                           'are not as active as their bug-eyed parent. '
+                           'However, they still need physical and mental '
+                           'enrichment every day.',
+            'fact': 'American Pugabull Temperament'},
+           {'description': 'To keep your American Pugabull healthy and ensure '
+                           'they live a long life, you need to have a solid '
+                           'care system in place. Learn more about the '
+                           'American Pugabull’s needs and how you can '
+                           'positively impact your furry friend’s life.',
+            'fact': 'How To Take Care of American Pugabulls\xa0\xa0'},
+           {'description': 'If socialization takes place at a young age, '
+                           'Amercian Pugabulls are great with children and '
+                           'fiercely loyal. In addition, children should '
+                           'always be taught how to handle animals, so no '
+                           'accidents occur. But once the American Pugabull '
+                           'integrates into the household, it will protect '
+                           'your family with its life.',
+            'fact': 'American Pugabulls And Children'},
+           {'description': 'Because the American Pugabull is a designer breed, '
+                           'there is no other breed quite like it, but there '
+                           'are several dogs that are similar in size and '
+                           'behavior, which include:',
+            'fact': 'Dogs similar to the American Pugabull'},
+           {'description': 'While there are no famous American Pugabulls as '
+                           'yet because they are a new breed, there are a few '
+                           'famous Pugs and American Bulldogs, which include:',
+            'fact': 'Famous American Pugabulls'},
+           {'description': None,
+            'fact': 'Popular Names for American Pugabulls'}],
+ 'image_urls': ['https://a-z-animals.com/media/2022/11/86653494-76E2-4249-BD53-8F0EFD312C74.jpeg'],
+ 'name': 'American Pugabull'}
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/american-robin/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/american-foxhound/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/american-robin/>
+{'facts': [{'description': 'On the continent of North America, American robins '
+                           'reside in the United States, Canada, and Mexico. '
+                           'They live in a temperate climate in woodland and '
+                           'shrubland habitats as well as open land areas. '
+                           'They commonly have habitats in residential areas '
+                           'also. You can find them in the grass foraging for '
+                           'food when they are not roosting or nesting in '
+                           'trees. You may see them in lawns and gardens, farm '
+                           'fields, city parks, and wooded areas.',
+            'fact': '4 Incredible '},
+           {'description': 'On the continent of North America, American robins '
+                           'reside in the United States, Canada, and Mexico. '
+                           'They live in a temperate climate in woodland and '
+                           'shrubland habitats as well as open land areas. '
+                           'They commonly have habitats in residential areas '
+                           'also. You can find them in the grass foraging for '
+                           'food when they are not roosting or nesting in '
+                           'trees. You may see them in lawns and gardens, farm '
+                           'fields, city parks, and wooded areas.',
+            'fact': 'Where to Find American Robins'},
+           {'description': 'The American robin’s scientific name is Turdus '
+                           'migratorius. It is in the thrush family, Turdidae, '
+                           'and the Aves class. Aves is a class of birds. The '
+                           'origin of the scientific name comes from the Latin '
+                           'words “turdus” meaning thrush and “migratorius” '
+                           'which means to migrate.',
+            'fact': 'Scientific Name'},
+           {'description': 'American robins are between eight and 11 inches in '
+                           'length and weigh 75 to 77 grams. They have a '
+                           'wingspan of 12 to 16 inches. Their anatomy is '
+                           'typical of a thrush. Their anatomy features '
+                           'include feathers, wings, and a beak. The beak is '
+                           'yellow and the throat is striped black and white. '
+                           'The head is black and the back is gray or black. '
+                           'The chest is a vivid orange color. Males are '
+                           'usually somewhat larger than females and have more '
+                           'colorful features.',
+            'fact': 'Size, Appearance & Behavior'},
+           {'description': 'The American robin is an omnivore. It eats both '
+                           'plants and animals. It forages on the ground '
+                           'throughout the day and will also forage at night. '
+                           'About 60% of their diet consists of fruits and '
+                           'berries and these foods are especially important '
+                           'in the winter.',
+            'fact': 'Diet'},
+           {'description': 'Because American robins frequently spend time in '
+                           'residential backyards, they are sometimes '
+                           'indirectly poisoned by pesticides used by humans '
+                           'and killed by pet cats. They are also preyed upon '
+                           'by several animals in the wild.The American '
+                           'robin’s conservation status on the IUCN Red List '
+                           'is the least concern. The species is stable. '
+                           'Poaching was a problem in the past. They were '
+                           'hunted many years ago but they are now protected '
+                           'by the US Migratory Bird Act.',
+            'fact': 'Predators, Threats & Conservation Status'},
+           {'description': 'The breeding season for American robins occurs '
+                           'between April and July. Reproduction is '
+                           'viviparous. The courtship behavior of the male is '
+                           'meant to attract a mate. He shakes his wings, '
+                           'spreads his tail, and sings for her attention. The '
+                           'female usually lays between three and five light '
+                           'blue eggs. It takes 12 to 14 days for the eggs to '
+                           'hatch. When the chicks hatch, they are altricial. '
+                           'This means that they are not independent and '
+                           'require care and feeding from their parents. The '
+                           'chicks leave the nest and begin fledgling about 13 '
+                           'days after hatching. It generally takes them two '
+                           'weeks to get good at flying and be able to sustain '
+                           'flight.',
+            'fact': 'Reproduction, Young & Molting'}],
+ 'image_urls': ['https://a-z-animals.com/media/2021/09/American-robin-header.jpg'],
+ 'name': 'American Robin'}
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/american-foxhound/>
+{'facts': [{'description': 'Before you adopt any pet, you need to know what’s '
+                           'in store. The American foxhound is an incredible '
+                           'dog but getting a clear perspective of what this '
+                           'dog is like can ensure that you make the right '
+                           'choice. Here are some pros and cons of owning '
+                           'American foxhounds:',
+            'fact': '3 Pros and Cons of Owning an American Foxhound'},
+           {'description': 'American foxhound dogs are taller than English '
+                           'foxhound dogs. The females are 21 to 24 inches in '
+                           'length and weigh about 40-60 pounds. The males are '
+                           'a little bigger, reaching 22-25 inches in length '
+                           'and weighing 45 to 65 pounds.',
+            'fact': 'Size and Weight'},
+           {'description': 'American foxhound dogs are generally healthy and '
+                           'not prone to many diseases, saving tons of money '
+                           'on veterinary visits. Hip dysplasia is one of the '
+                           'most common issues that can arise with this type '
+                           'of dog, due to their long legs. This condition '
+                           'occurs when the hip joint doesn’t line up properly '
+                           'in growth, and it can be incredibly painful.',
+            'fact': 'Common Health Issues'},
+           {'description': 'These dogs have a friendly temperament with both '
+                           'the owner’s family as well as other pets. They are '
+                           'affectionate, kind, and intelligent, making them a '
+                           'faithful companion for a family. They love to act '
+                           'as playmates for the family’s kids. However, '
+                           'American foxhounds can sometimes be aggressive '
+                           'with strangers.',
+            'fact': 'Temperament'},
+           {'description': 'Every dog is different, and the American Foxhound '
+                           'has a few things that you should consider before '
+                           'you adopt one. Their diet, daily behavior, and '
+                           'even their early care as puppies will vary. '
+                           'However, with a few tips, understanding what they '
+                           'need is simple.',
+            'fact': 'Care'},
+           {'description': 'With the outdoorsy nature of the American '
+                           'foxhound, a steady diet of both high-quality meat '
+                           'and vegetables will keep their body strong. '
+                           'Traditionally, they are fed horsemeat when they '
+                           'hunt with their owners, and they’ll indulge in '
+                           'oatmeal as well. Cooked eggs and broccoli are '
+                           'favorites of the breed, though they should be '
+                           'given in moderation to avoid digestive upset or '
+                           'flatulence.',
+            'fact': 'The Best Dog Food'},
+           {'description': 'These dogs are known to be great with children. '
+                           'They absolutely love kids and are very tolerant '
+                           'towards them. They also help toddlers take their '
+                           'first steps. These dogs make great playmates.',
+            'fact': 'American Foxhounds and Children'},
+           {'description': 'If an American foxhound isn’t the right match for '
+                           'you, there are still many dog breeds that could '
+                           'find a happy place in your family. Here are some '
+                           'dogs that are similar to these dogs.',
+            'fact': 'Dogs Similar to American Foxhounds'},
+           {'description': 'Some of the famous American foxhounds in history '
+                           'date back to the early formation of the United '
+                           'States. George Washington brought along two '
+                           'foxhounds, breeding them with French foxhounds.',
+            'fact': 'Famous American Foxhounds'},
+           {'description': 'Here are some of the popular names for these dogs:',
+            'fact': 'Popular Names'}],
+ 'image_urls': ['https://a-z-animals.com/media/2019/10/American-Foxhound-header.jpg'],
+ 'name': 'American Foxhound'}
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/american-water-spaniel/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/amethystine-python/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/american-water-spaniel/>
+{'facts': [{'description': 'The American Water Spaniel is an example of the '
+                           'Americans’ ability to take European breeds and '
+                           'modify them for their own needs. Settlers in '
+                           'Wisconsin and Minnesota wanted a breed of dog that '
+                           'could help them hunt the waterfowl in and around '
+                           'the Great Lakes, so they created the American '
+                           'Water Spaniel. The exact origin of the breed is '
+                           'unknown, but it is thought to have been created '
+                           'from the Irish Water Spaniel, the Curly-Coated '
+                           'Retriever, and the English Water Spaniel '
+                           '(extinct). This illustrates the resourcefulness of '
+                           'Americans when faced with new problems.',
+            'fact': '3 Pros and Cons of Owning an American Water Spaniel'},
+           {'description': 'These are medium-sized dogs. Both males and '
+                           'females are between 15 and 18 inches tall. Males, '
+                           'who are typically a bit heavier than their female '
+                           'counterparts, weigh between 30 and 45 pounds. '
+                           'Females weigh between 25 and 40 pounds. '
+                           'Three-month-old puppies weigh between 16 and 21 '
+                           'pounds, and six-month-old puppies weigh between 29 '
+                           'and 39 pounds. Both male and female puppies will '
+                           'be fully grown by the time they are 16 months old.',
+            'fact': 'American Water Spaniel Size and Weight'},
+           {'description': 'There are a few key health concerns you should be '
+                           'aware of with this breed. One is hip dysplasia. '
+                           'With this condition, a dog’s hip does not form '
+                           'correctly, and there is a poor fit between the hip '
+                           'socket and the femur. The bones rub together, '
+                           'which can lead to pain and may make it more '
+                           'challenging for your dog to walk.',
+            'fact': 'Common Health Issues'},
+           {'description': 'American Water Spaniels were bred to be hunting '
+                           'dogs. As such, they are a very active breed who '
+                           'enjoy playing, hunting, and doing other types of '
+                           'work. When their activity needs are met, these '
+                           'dogs exhibit a variety of traits that allow them '
+                           'to make excellent family pets. They have an '
+                           'affectionate and playful personalities and enjoy '
+                           'spending time with children and other family '
+                           'members.',
+            'fact': 'Temperament'},
+           {'description': 'Knowing about this breed can help you provide the '
+                           'best care possible for your dog. Since all dog '
+                           'breeds are unique, caring for this breed, in '
+                           'particular, will look different from caring for '
+                           'other dog breeds.',
+            'fact': 'How to Take Care of an American Water Spaniel'},
+           {'description': 'This dog breed should be fed a high-quality dog '
+                           'food that will meet their nutritional needs. You '
+                           'may choose to feed your adult dog or puppy bagged '
+                           'food, or you may choose to offer them a '
+                           'home-prepared diet.',
+            'fact': 'The Best Dog Food'},
+           {'description': 'American Water Spaniels can make a good family '
+                           'pet. When properly trained, they are known for '
+                           'being very obedient. They are also very '
+                           'affectionate and can be very gentle with children. '
+                           'If you are bringing an American Water Spaniel home '
+                           'to be a family dog, you will still want to closely '
+                           'supervise your children when they are with the '
+                           'dog. This can help avoid either your children or '
+                           'the dog getting injured by accident.',
+            'fact': 'American Water Spaniels and Children'},
+           {'description': 'Three dog breeds that are similar to the American '
+                           'Water Spaniel are the Curly Coated Retriever, '
+                           'English Springer Spaniel, and Field Spaniel.',
+            'fact': 'Dogs similar to American Water Spaniels'},
+           {'description': 'The American Water Spaniel is the state dog of '
+                           'Wisconsin. Since this is a relatively rare breed, '
+                           'there are not too many celebrities or other famous '
+                           'individuals who own an American Water Spaniel.',
+            'fact': 'Famous American Water Spaniels'},
+           {'description': 'Below you’ll find some popular names you could use '
+                           'for your Water Spaniel.',
+            'fact': 'Popular Names'}],
+ 'image_urls': ['https://a-z-animals.com/media/animals/images/original/american_water_spaniel.jpg'],
+ 'name': 'American Water Spaniel'}
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/american-leopard-hound/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/american-eel/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/amethystine-python/>
+{'facts': [{'description': 'The amethystine python is native to the island of '
+                           'New Guinea and its surrounding islands and '
+                           'northeastern Queensland in Australia. The snake '
+                           'hunts by waiting patiently for its prey, and '
+                           'rapidly striking as the animal passes by, once it '
+                           'has a potential meal in its mouth, it wraps '
+                           'several coils around its prey and constricts it '
+                           'until the heart stops.',
+            'fact': 'Amazing Facts About the Amethystine Python'},
+           {'description': 'The amethystine python is native to the island of '
+                           'New Guinea and its surrounding islands and '
+                           'northeastern Queensland in Australia. The snake '
+                           'hunts by waiting patiently for its prey, and '
+                           'rapidly striking as the animal passes by, once it '
+                           'has a potential meal in its mouth, it wraps '
+                           'several coils around its prey and constricts it '
+                           'until the heart stops.',
+            'fact': 'Where to Find Them'},
+           {'description': 'Amethystine pythons were once the type species for '
+                           'a group of five snakes that scientists believed '
+                           'were subspecies of amethystine pythons. They '
+                           'classified them all under the Morelia genus until '
+                           'a group of biologists delved deeper, using genetic '
+                           'sequencing and morphology.',
+            'fact': 'Scientific Name and Classification'},
+           {'description': 'Like other snakes, pythons’ early ancestors were '
+                           'actually legged reptiles, similar to lizards and '
+                           'even more aquatic-based reptiles. Eventually, they '
+                           'lost their legs or became vestigial, as they '
+                           'became more and more unused. There are benefits of '
+                           'being extremely low to the ground when your prey '
+                           'is on that level!',
+            'fact': 'History and Evolution'},
+           {'description': 'Due to its widespread occurrence, the IUCN Redlist '
+                           'of Threatened Species classified the amethystine '
+                           'python as “Least Concern.”',
+            'fact': 'Population and Conservation Status'},
+           {'description': 'This large constrictor can reach 24 feet long, but '
+                           'most individuals average 8-14 feet long. The '
+                           'amethystine python is a surprisingly thin species '
+                           'for its length and most 12-foot-long snakes only '
+                           'weigh about 10-15 pounds. Its head is large and '
+                           'elongated with a blunt snout, shield-shaped scales '
+                           'on top with elliptical pupils. Like most pythons, '
+                           'it has heat-sensing pits. These are located near '
+                           'its snout and along the lower rear labials.',
+            'fact': 'Appearance and Description'},
+           {'description': 'They’re not venomous, so the danger of an '
+                           'envenomation doesn’t exist with this species. '
+                           'However, their size makes them potentially '
+                           'dangerous to pets and small children. Amethystine '
+                           'pythons sometimes attack pets and livestock, and a '
+                           'small enough child could be at risk. However, most '
+                           'encounters of this nature happen away from cities.',
+            'fact': 'How Dangerous Are They?'},
+           {'description': 'This species doesn’t seem to have any problems '
+                           'being near people or suburban areas; there are '
+                           'several news reports about them showing up in '
+                           'houses, pools, and more. The biggest threat these '
+                           'huge snakes face is being in the wrong place at '
+                           'the wrong time. They are either killed by someone '
+                           'out of fear or run over by a car. They are just as '
+                           'likely to visit suburbia as they are to stay in '
+                           'the rainforest or scrubland.',
+            'fact': 'Behavior and Humans'}],
+ 'image_urls': ['https://a-z-animals.com/media/2022/06/scrub-python-on-branch-picture-id1216959855.jpg'],
+ 'name': 'Amethystine Python (Scrub Python)'}
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/american-leopard-hound/>
+{'facts': [{'description': 'The American Leopard Hound is believed to be one '
+                           'of the oldest of the tree dog breeds in the '
+                           'Americas and while its exact origins are not '
+                           'known, it is reputed that they descended from dogs '
+                           'that were brought to the New World, specifically '
+                           'Mexico, by Spanish conquistadors during the '
+                           'Spanish Inquisition. This hound was then brought '
+                           'to the United States by the settlers who would use '
+                           'it as a hog-hunting dog. Records indicate that the '
+                           'American Leopard Hound was established in North '
+                           'Carolina around the early 1700s.',
+            'fact': '3 Pros And Cons Of Owning An American Leopard Hound'},
+           {'description': 'The American Leopard is a medium to large-sized '
+                           'dog. However, there is a fairly large range of '
+                           'different sizes.',
+            'fact': 'Size and Weight'},
+           {'description': 'The American Leopard Hound is a healthy breed with '
+                           'a typical lifespan of 12 to 15 years, but they do '
+                           'suffer from several problems, including deafness, '
+                           'cancer, and a developmental disorder called hip '
+                           'dysplasia, in which the joint can become loose in '
+                           'its socket, causing lameness and pain. Serious '
+                           'health problems can also result from the mating of '
+                           'two merle-colored parents. The double merle '
+                           'puppies are much more likely to suffer from '
+                           'deafness and blindness. Good breeders will '
+                           'generally test their stock for common inheritable '
+                           'issues. You can ask them to provide proof that '
+                           'their dogs have received a positive health '
+                           'assessment. You should also keep up regular '
+                           'appointments at the vet to catch health problems '
+                           'early. In summation, these are the biggest issues '
+                           'with this breed:',
+            'fact': 'Common Health Issues'},
+           {'description': 'The American Leopard Hound is a highly intelligent '
+                           'breed, both in terms of social IQ and tracking '
+                           'ability. While it was originally bred to be a '
+                           'hunting dog, it also does exceptionally well as a '
+                           'member of the family. This breed is highly loyal '
+                           'and affectionate toward people of all ages; it '
+                           'seems to be particularly protective of children. '
+                           'Don’t expect to treat it like a simple companion '
+                           'though. This breed has a very high-energy, '
+                           'purposeful, work-oriented personality; both its '
+                           'mental and physical needs should be met with '
+                           'games, toys, sports, exercise, and social '
+                           'interactions throughout the entire day. If it '
+                           'doesn’t obtain enough activity time, then it might '
+                           'channel some of its energy into destructive '
+                           'behavior.',
+            'fact': 'Temperament'},
+           {'description': 'The American Leopard Hound is a good choice for '
+                           'owners across the entire spectrum of experience '
+                           'levels. They’re fairly easy to train, easy to '
+                           'groom, and easy to feed. However, they do require '
+                           'an owner who’s heavily invested in their lives. '
+                           'Don’t expect to buy one and ignore it for half the '
+                           'day. They also need plenty of space for their '
+                           'physical activity.',
+            'fact': 'How To Take Care Of The American Leopard Hound'},
+           {'description': 'The American Leopard Hound will need around three '
+                           'cups of high-quality dog food per day, or at least '
+                           'enough to satisfy its immense activity level. You '
+                           'should watch its calorie intake and limit treats '
+                           'to prevent obesity.',
+            'fact': 'The Best Dog Food For American Leopard Hounds'},
+           {'description': 'This sociable, protective, and gentle breed will '
+                           'get along very well with children of all ages. '
+                           'However, it is important to teach younger children '
+                           'in particular how to approach and handle this dog, '
+                           'and even then, adults should be present to '
+                           'supervise all interactions in case something '
+                           'negative occurs.',
+            'fact': 'The American Leopard Hound And Children'},
+           {'description': 'If you’re still struggling to come up with an '
+                           'appropriate name, you should think about adopting '
+                           'one of these suggestions:',
+            'fact': 'Dogs Similar To The American Leopard Hound'},
+           {'description': 'If you’re still struggling to come up with an '
+                           'appropriate name, you should think about adopting '
+                           'one of these suggestions:',
+            'fact': 'Popular Names For The American Leopard Hound'}],
+ 'image_urls': ['https://a-z-animals.com/media/2022/05/shutterstock_1854189625.jpg'],
+ 'name': 'American Leopard Hound'}
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/american-eel/>
+{'facts': [{'description': 'The scientific name of the American Eel is '
+                           'Anguilla rostrata. However, it also has many '
+                           'regional colloquial names including snakefish, '
+                           'Atlantic eel, Boston eel, black eel, bronze eel, '
+                           'common eel, freshwater eel, green eel, little eel, '
+                           'river eel, silver eel, or slippery eel.',
+            'fact': '5 American Eel Facts'},
+           {'description': 'The scientific name of the American Eel is '
+                           'Anguilla rostrata. However, it also has many '
+                           'regional colloquial names including snakefish, '
+                           'Atlantic eel, Boston eel, black eel, bronze eel, '
+                           'common eel, freshwater eel, green eel, little eel, '
+                           'river eel, silver eel, or slippery eel.',
+            'fact': 'American Eel Classification and Scientific Name'},
+           {'description': 'The American Eel goes through five distinct phases '
+                           'of life once it has hatched from an egg. Each '
+                           'phase has a different name and appearance.',
+            'fact': 'American Eel Appearance'},
+           {'description': 'In 2002, the Atlantic States Marine Fisheries '
+                           'Commission (ASMFC) estimated that there may be as '
+                           'few as 700,000 American Eels in the wild. Experts '
+                           'estimate that their population declined a lot in '
+                           'the 1980s and 1990s, but that they have been '
+                           'stable in the 2000s. However, they also say that '
+                           'there may not be enough recent studies that focus '
+                           'on American Eels to determine their current '
+                           'population levels. The American eel’s conservation '
+                           'status is endangered, which means that the species '
+                           'could become extinct soon.',
+            'fact': 'American Eel Distribution, Population, and Habitat'},
+           {'description': 'American Eels have a different diet depending on '
+                           'which phase of life they are in. In all phases of '
+                           'life, they are mostly nocturnal and eat at night. '
+                           'They have a great sense of smell and use that to '
+                           'find their meals. They are technically omnivorous '
+                           'but mostly eat other animals in whatever aquatic '
+                           'environment they are in.',
+            'fact': 'American Eel Predator and Prey'},
+           {'description': 'American Eels can live up to 40 years. They can '
+                           'also live for as few as 5. They live longer if '
+                           'they spend time in freshwater as an adult.',
+            'fact': 'American Eel Reproduction and Lifespan'},
+           {'description': 'If you remember one fact about American Eels, it '
+                           'should be this one: never eat raw eel! The blood '
+                           'is poisonous to humans when raw. When eel is '
+                           'cooked, it is no longer toxic. Their blood '
+                           'contains a toxin that causes extreme muscle '
+                           'cramping, including the body’s most important '
+                           'muscle: the heart.',
+            'fact': 'American Eel in Fishing and Cooking'},
+           {'description': None, 'fact': 'Similar Animals:'}],
+ 'image_urls': ['https://a-z-animals.com/media/2021/08/americaneel.jpg'],
+ 'name': 'American Eel'}
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/zonkey/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/american-hairless-terrier/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/zonkey/>
+{'facts': [{'description': 'The Zonkey is a hybrid animal that is created by '
+                           'cross-breeding two different species of animal '
+                           'that belong to the same genetic group.',
+            'fact': 'Classification'},
+           {'description': 'As far as the evolution of the Zonkey goes, '
+                           'there’s not too much to tell. This species was '
+                           'mentioned by Charles Darwin in his world-changing '
+                           '“Origin of Species,” which was written in 1859. '
+                           'This is recorded proof that they were in existence '
+                           'at that point in history. Dated earlier, a man '
+                           'named Lord Morton cross-bred horses around 1815. '
+                           'So zonkey hybrids have existed in captivity at '
+                           'least since the 19th century.',
+            'fact': 'Evolution'},
+           {'description': 'There are no sub-species of Zonkey, but below is a '
+                           'list of Zebroids–zebras crossed with other members '
+                           'of the horse family:',
+            'fact': 'Types of Zebroids'},
+           {'description': 'The Zebra and the Donkey are closely related to '
+                           'one another and both belong to the Horse family '
+                           'means these two species share several similar '
+                           'characteristics including their size. The Zonkey '
+                           'tends to be of a similar size to these animals but '
+                           'takes on a more definitive Donkey-like appearance, '
+                           'with the obvious exception of inheriting the '
+                           'uniquely-striped pattern on their fur from their '
+                           'Zebra parent. Zonkeys and Zedonks (donkey father '
+                           'and zebra mother) are animals that tend to be '
+                           'either tan, brown, or grey in color with a lighter '
+                           'underside, and it is on the lighter parts of their '
+                           'body like their legs and belly where the Zonkey’s '
+                           'darker stripes are most prominent (they are much '
+                           'harder to see on the darker parts). The Zonkey '
+                           'also has a black mane that extends along the ridge '
+                           'of its back to the tip of its black tail, and a '
+                           'large head and ears which makes the Zonkey look '
+                           'much more like a Donkey than a Zebra.',
+            'fact': 'Anatomy and Appearance'},
+           {'description': 'Out of the three species of Zebra that are found '
+                           'living on the African continent, two are found in '
+                           'Eastern Africa whilst the other is found in more '
+                           'southern regions. Generally preferring to inhabit '
+                           'savannas and open woodlands throughout their '
+                           'historical range, Zebras are often found in '
+                           'enormous herds, particularly on the Serengeti '
+                           'plains where they migrate thousands of miles '
+                           'following the rains that bring new grass. Some are '
+                           'also found in close proximity to human settlements '
+                           'where they are known to have to compete with '
+                           'domestic livestock, such as Donkeys, for food. It '
+                           'is in these areas where Zonkeys are most likely to '
+                           'be produced naturally in the wild as it allows the '
+                           'two separate species to mate. Sadly, however, the '
+                           'world’s Zonkeys tend to be found in zoos and '
+                           'animal institutions where they are generally bred '
+                           'deliberately.',
+            'fact': 'Distribution and Habitat'},
+           {'description': 'Despite being very similar animals both in '
+                           'appearance and behavior, zebras have not been '
+                           'domesticated like donkeys have. Humans have '
+                           'utilized donkeys for thousands of years for work '
+                           'and other purposes, but zebras have not been tamed '
+                           'because of their more aggressive nature. The '
+                           'Zonkey not only inherits the stripes of the zebra '
+                           'but also its wild streak. One of the Zonkey’s most '
+                           'favorable characteristics is its sheer power–a '
+                           'combination of the stamina of the Donkey mixed '
+                           'with the speed and strength of the Zebra. This '
+                           'gives the zonkey skills that can make it a '
+                           'valuable work animal that can pull heavy loads.',
+            'fact': 'Behavior and Lifestyle'},
+           {'description': 'A male Zebra must be mated with a female Donkey '
+                           'for a Zonkey to be produced. If the sexes are '
+                           'switched, the offspring is a Zedonk. The gestation '
+                           'period can last for more than a year, and then the '
+                           'female Donkey births a single Zonkey foal. Like '
+                           'Zebra and Donkey foals, this foal is also able to '
+                           'stand up just minutes after birth. The Zonkey foal '
+                           'remains with its mother for five to six months of '
+                           'age, at which point it becomes independent and '
+                           'joins another herd. This kind of behavior happens '
+                           'a bit later with Zebra foals, which can take up to '
+                           'four years to leave the herd. Like numerous other '
+                           'hybrid animals, the Zonkey can’t produce offspring '
+                           'of its own, as the cross-breeding of two different '
+                           'species often results in their young being sterile '
+                           'and unable to continue a population.',
+            'fact': 'Reproduction and Life Cycles'},
+           {'description': 'Like Donkeys, Zebras, Horses, and their other '
+                           'relatives, Zonkeys are herbivorous animals meaning '
+                           'that they survive on a diet that is solely '
+                           'comprised of plant matter. The majority of their '
+                           'food is made up of grasses and herbs that grow on '
+                           'the ground and like all equines, the Zonkey has '
+                           'flat, broad teeth which are the perfect tools for '
+                           'grinding down the fibrous grass. Along with '
+                           'grazing, Zonkeys also like to browse for other '
+                           'types of food including fruits and berries which '
+                           'are found growing more common in less arid areas. '
+                           'Due to the fact that Zonkeys are naturally found '
+                           'in the African wilderness, there is always '
+                           'competition for both food and water from other '
+                           'animals inhabiting the same area and so they are '
+                           'always on the move in search of greener pastures.',
+            'fact': 'Diet and Prey'},
+           {'description': 'Despite their large size and the fact that they '
+                           'are long-living animals, both Zebras and Donkeys '
+                           '(and therefore Zonkeys) are important prey to '
+                           'numerous carnivores throughout their natural '
+                           'range. Lions and Hyenas are their most common '
+                           'predators, along with African Hunting Dogs and '
+                           'large felines like Leopards and Cheetahs. Even '
+                           'though they remain a stable food source for these '
+                           'large predators, they are often hard to catch and '
+                           'Zebras particularly are known to protect wounded '
+                           'individuals to prevent them from being hurt '
+                           'anymore. Although rarer today, one of the biggest '
+                           'threats to both Zebras and Donkeys in Africa has '
+                           'been the fact that they have been subjected to '
+                           'hunting for both their meat and their skins. They '
+                           'are also being pushed into more isolated regions '
+                           'of their natural habitats meaning a decrease in '
+                           'the likelihood of wild Zonkeys.',
+            'fact': 'Zonkey Predators and Threats'},
+           {'description': 'Although we often only think of Donkeys as being '
+                           'domesticated animals, wild herds of Donkeys can '
+                           'still be found living on the continent and in '
+                           'herds up to 100 strong in northern Africa, but '
+                           'this is an area that is not inhabited by Zebras '
+                           'and so the chances of a Zonkey occurring under '
+                           'these conditions would be extremely rare. Zonkeys '
+                           'have been mentioned by naturalists for centuries '
+                           'including Darwin who mentioned the possibility of '
+                           'a fertile female Zonkey that was being exhibited '
+                           'at the London Zoo. The Zonkey is thought to be a '
+                           'popular work animal as they have an apparent '
+                           'resistance to certain pests and diseases, '
+                           'something which is thought to have been inherited '
+                           'from their Zebra father.',
+            'fact': 'Interesting Facts and Features'},
+           {'description': 'Originally bred by Humans to pull heavy loads and '
+                           'thought to have appeared in zoos in the 19th '
+                           'century, the Zonkey first became famous when one '
+                           'was accidentally sired in Colchester Zoo in the '
+                           '1970s, and they have since continued to exhibit '
+                           'Zonkeys as a popular tourist attraction. Along '
+                           'with now being bred in zoos around the world, '
+                           'Zonkeys are also bred for riding and as work '
+                           'animals involved in transport and pulling heavy '
+                           'loads due to their strength and stamina. In the '
+                           'wild in Africa however, Zebras have come under '
+                           'particular threat from people due to both hunting '
+                           'and loss of habitat for growing Human settlements '
+                           'or land clearance for agriculture.',
+            'fact': 'Relationship with Humans'},
+           {'description': 'Because the Zonkey is a cross-bred animal and '
+                           'cannot continue a population, it is not listed by '
+                           'the IUCN. The three Zebra species though are all '
+                           'listed with the Plains Zebra as Least Concern, the '
+                           'Mountain Zebra as Vulnerable, and the Grevy’s '
+                           'Zebra as Endangered. This means that the chances '
+                           'of Zonkeys occurring in the wild are becoming '
+                           'slimmer and slimmer, with the majority of them '
+                           'today found in zoos and used as work animals.',
+            'fact': 'Conservation Status and Life Today'}],
+ 'image_urls': ['https://a-z-animals.com/media/2019/10/Zonkey-cover.jpg'],
+ 'name': 'Zonkey'}
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/zokor/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/american-paddlefish/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/american-hairless-terrier/>
+{'facts': [{'description': 'These are compact terriers that should stand '
+                           'between 12 and 16 inches tall at the shoulders. '
+                           'Healthy dogs of this breed will weigh between 12 '
+                           'and 16 pounds. Females usually give birth to a '
+                           'litter of about four pups. The puppies will '
+                           'usually mature mentally about 9 months, but they '
+                           'may continue to grow until they are about two.',
+            'fact': '3 Pros and Cons of Ownership'},
+           {'description': 'These are compact terriers that should stand '
+                           'between 12 and 16 inches tall at the shoulders. '
+                           'Healthy dogs of this breed will weigh between 12 '
+                           'and 16 pounds. Females usually give birth to a '
+                           'litter of about four pups. The puppies will '
+                           'usually mature mentally about 9 months, but they '
+                           'may continue to grow until they are about two.',
+            'fact': 'Size and Weight'},
+           {'description': 'American hairless terriers are robust, healthy '
+                           'dogs, but the breed can suffer from some common '
+                           'health issues. As with many small breed dogs, hip '
+                           'dysplasia can be a concern in this breed. '
+                           'Additionally, luxating patella where the kneecap '
+                           'comes out of position can occur. Dilated '
+                           'cardiomyopathy can leave dogs with arrhythmias.',
+            'fact': 'Common Health Issues'},
+           {'description': 'American hairless terriers make great companion '
+                           'dogs because they love to be around people and '
+                           'other animals. This personality trait is apparent '
+                           'in most of this breed; they are happy to snuggle '
+                           'on the sofa with you or go on a quick outside '
+                           'romp. This temperament makes them ideal for '
+                           'families and those living in apartments.',
+            'fact': 'Temperament and Behavior'},
+           {'description': 'Just like you need the proper diet and exercise to '
+                           'stay healthy, so does the American hairless '
+                           'terrier. It is your responsibility to see that the '
+                           'dog receives the proper food, exercise and '
+                           'grooming, if you decide to add this breed to your '
+                           'family.',
+            'fact': 'Care'},
+           {'description': 'The bitch normally gives birth to four pups. If '
+                           'you are looking to get one of these pups from a '
+                           'breeder, ask to see the parents’ genetic papers. A '
+                           'reputable breeder will be glad to show you a '
+                           'cardiac and an Orthopedic Foundation for Animals '
+                           'report so that you know the genetic defaults are '
+                           'not being passed down to your puppy.',
+            'fact': 'Puppies'},
+           {'description': 'Unlike many terrier breeds, such as the rat '
+                           'terrier, American hairless terriers make great '
+                           'dogs for families with children. If you consider '
+                           'getting an older dog from a breeder or a rescue, '
+                           'take your children with you and watch the '
+                           'interaction. You are likely to find that the dog '
+                           'warms up to your children instantly. Of course, '
+                           'you should always teach your children how to '
+                           'interact with the dog appropriately, and breeders '
+                           'and rescues often have great ideas on how to do '
+                           'this task.',
+            'fact': 'Children'},
+           {'description': 'If the American hairless terrier does not seem '
+                           'like an ideal dog for you, consider these other '
+                           'breeds:',
+            'fact': 'Similar Dogs'},
+           {'description': 'There are many popular names for American hairless '
+                           'terriers, including:',
+            'fact': 'Popular Names for American Hairless Terriers'}],
+ 'image_urls': ['https://a-z-animals.com/media/2021/03/shutterstock_1107160829.jpg'],
+ 'name': 'American Hairless Terrier'}
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/zokor/>
+{'facts': [{'description': 'Zokors are rodents native to Asia. They are '
+                           '“molelike” creatures with tiny eyes, long, sharp '
+                           'claws, and long incisors. Zokors are expert '
+                           'burrowers and mostly live underground. You will '
+                           'rarely catch these animals on the surface, though '
+                           'you could spot the mounds of dirt they kick up '
+                           'during digging expeditions.',
+            'fact': 'Zokor Summary'},
+           {'description': 'Zokors are rodents that belong to the subfamily '
+                           'Myospalacinae. They belong to the family '
+                           'Spalacidae and are comprised of two living genera: '
+                           'Myospalax and Eospalax. The third genus, '
+                           'Pliosiphneus, is extinct.',
+            'fact': 'Zokor Facts'},
+           {'description': 'Zokors are rodents that belong to the subfamily '
+                           'Myospalacinae. They belong to the family '
+                           'Spalacidae and are comprised of two living genera: '
+                           'Myospalax and Eospalax. The third genus, '
+                           'Pliosiphneus, is extinct.',
+            'fact': 'Scientific Name'},
+           {'description': 'Zokors are frequently compared to mole rats in '
+                           'appearance, and they are actually somewhat closely '
+                           'related to the blind mole rat who belongs to the '
+                           'subfamily Spalacinae. They are also closely '
+                           'related to root and bamboo rats that belong to the '
+                           'subfamily Rhizomyinae, also in the family '
+                           'Spalacidae.',
+            'fact': 'Evolution and History'},
+           {'description': 'Zokors are medium-sized, mole-like rodents. These '
+                           'animals have round, cylindrical bodies which are '
+                           'about 6 to 10 inches long. They have long, silky '
+                           'fur and their color varies from grayish to reddish '
+                           'brown and even pinkish buff. There are six species '
+                           'of zokor, thus, their color naturally differs. One '
+                           'of the species even has white patches. They are '
+                           'quite robust animals and weigh around 5 to 20 '
+                           'ounces.',
+            'fact': 'Zokor Appearance'},
+           {'description': 'Zokors are foremost a burrowing species, and they '
+                           'spend a considerable amount of their lives '
+                           'underground. They are capable of burrowing complex '
+                           'tunnels. First, they dig with their front feet and '
+                           'push the soil out with their heads. Then, they '
+                           'kick up the dirt they have dug out from behind '
+                           'them with their hind legs, leaving mounds of soil '
+                           'on the surface. This is unlike other spalacids who '
+                           'mostly use their incisors as their digging tools.',
+            'fact': 'Zokor Behavior'},
+           {'description': 'These rodents are omnivores that may sometimes '
+                           'occur as primarily herbivores. They are also '
+                           'insectivorous animals. They mostly eat plants such '
+                           'as bulbs, roots, grains, tubers, seeds, and '
+                           'rhizomes, and also eat leaves, shoots, and insects '
+                           'as well. Zokors forage above the ground at night '
+                           'and keep stores of food in long, elaborate tunnels '
+                           'underground.',
+            'fact': 'Zokor Diet'},
+           {'description': 'Zokors are native to China, Siberian Russia, and '
+                           'Kazakhstan. Their habitat range spans southern '
+                           'Mongolia, western Siberia, and northern and '
+                           'western China. They inhabit temperate woodland '
+                           'regions, steppes, river valley meadows, pastures, '
+                           'vegetable gardens, and old agricultural fields. '
+                           'These animals prefer to live in areas that have '
+                           'nutrient-rich soil, ample grasses, rhizomes, '
+                           'tubers, and bulbs to forage. They also inhabit '
+                           'mountain valleys at elevations of over 2,950 to '
+                           '7,200 feet. Zokors usually avoid stony slopes and '
+                           'sod-covered steppes.',
+            'fact': 'Habitat and Population'},
+           {'description': 'Scientists don’t know much about the mating '
+                           'behavior of zokors. Females typically give birth '
+                           'once a year each spring to about four to six '
+                           'young. The offspring remain dependent on their '
+                           'mother and stay with her throughout the summer '
+                           'until fall when they go their separate ways.',
+            'fact': 'Reproduction and Lifespan'},
+           {'description': 'Zokors are prey to many carnivorous animals such '
+                           'as Eurasian ferrets, hawks, steppe polecats, '
+                           'eagles, owls, the Eurasian lynx, saker falcons, '
+                           'goshawks, black kites, foxes, buzzards, and the '
+                           'Chinese mountain cat.',
+            'fact': 'Predators and Threats'}],
+ 'image_urls': ['https://a-z-animals.com/media/2022/11/Myospalax_psilurus_2.jpg'],
+ 'name': 'Zokor'}
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/american-paddlefish/>
+{'facts': [{'description': 'The American Paddlefish is part of the '
+                           'polyodotidae family, also referred to as the '
+                           'paddlefish family. This species is the only known '
+                           'species in this family that is still alive today. '
+                           'The only other species to survive into modern '
+                           'times was the Chinese Paddlefish, but that species '
+                           'went extinct in 2003.',
+            'fact': '5 American Paddlefish Facts'},
+           {'description': 'The American Paddlefish is part of the '
+                           'polyodotidae family, also referred to as the '
+                           'paddlefish family. This species is the only known '
+                           'species in this family that is still alive today. '
+                           'The only other species to survive into modern '
+                           'times was the Chinese Paddlefish, but that species '
+                           'went extinct in 2003.',
+            'fact': 'American Paddlefish Classification and Scientific Name'},
+           {'description': 'The American Paddlefish is referred to as a '
+                           'primitive fish species, as it shares many traits '
+                           'with extremely early species. Therefore, it '
+                           'resembles how fish likely looked when they first '
+                           'evolved.',
+            'fact': 'American Paddlefish Appearance'},
+           {'description': 'Unlike many freshwater fish, the American '
+                           'Paddlefish is extremely mobile. Therefore, their '
+                           'population in certain areas can vary as fish move '
+                           'about. They inhabit many rivers in the Mississippi '
+                           'Valley and Gulf slope drainages that attach to the '
+                           'region. Usually, they are found in deeper, low '
+                           'current areas, such as side channels, lakes, and '
+                           'tailwaters below dams.',
+            'fact': 'American Paddlefish Distribution, Population, and '
+                    'Habitat'},
+           {'description': 'Because American Paddlefish are so large, they '
+                           'tend not to be eaten by other fish or other '
+                           'predators.',
+            'fact': 'American Paddlefish Predators and Prey'},
+           {'description': 'In the proper environment, these fish can live for '
+                           'as long as 30 years. However, the median age of '
+                           'this species is around five to eight years. Most '
+                           'fish do not live their whole lifespan. Usually, '
+                           'the maximum age in the wild is around fourteen to '
+                           'eighteen years. Ages are determined through '
+                           'dentary studies.',
+            'fact': 'American Paddlefish Reproduction and Lifespan'},
+           {'description': 'Paddlefish is not typically eaten by humans, '
+                           'though it isn’t poisonous or toxic. However, their '
+                           'eggs are occasionally used for caviar. American '
+                           'Paddlefish are currently being raised throughout '
+                           'Europe and even in Russia, where the fish is kept '
+                           'largely for its eggs.',
+            'fact': 'American Paddlefish in Fishing and Cooking'}],
+ 'image_urls': ['https://a-z-animals.com/media/paddlefish-2.jpg'],
+ 'name': 'American Paddlefish'}
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/american-eskimo-dog/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/american-eskimo-dog/>
+{'facts': [{'description': 'The American Eskimo Dog’s name is a bit misleading '
+                           'as the Indigenous people that are referred to as '
+                           'Eskimos had no part in the breed’s origin. German '
+                           'immigrants who arrived in the United States in the '
+                           'early 1800s had a great influence on the '
+                           'development of the Midwest. Not only did they '
+                           'bring Lutheranism, the brewing industry, and '
+                           'German-style food, but they also brought along a '
+                           'Nordic breed of dog known as the German Spitz. '
+                           'These dogs quickly became popular show dogs due to '
+                           'their intelligence and agility, with Pierre, an '
+                           'Eskie tightrope walker, being one of the most '
+                           'famous performing dogs of the 1930s.',
+            'fact': '3 Pros and Cons of Owning an American Eskimo Dog'},
+           {'description': 'The American Eskimo comes in three different '
+                           'sizes: standard, mini, and toy. In the chart '
+                           'below, the high number represents the standard '
+                           'size, while the smaller figure represents the '
+                           'typical size of the toy dog. The mini is somewhere '
+                           'in between.',
+            'fact': 'Size and Weight'},
+           {'description': 'The American Eskimo is a healthy breed with a life '
+                           'expectancy of around 13 to 15 years. Some of the '
+                           'rarer conditions you should still nevertheless '
+                           'look out for include hip dysplasia (in which the '
+                           'thighbone doesn’t fit perfectly into the hip '
+                           'joint), progressive retinal atrophy (the '
+                           'deterioration of the retina), cataracts (the '
+                           'clouding of the lens in the black eye), and '
+                           'Legg-Calve-Perthes Disease (in which the blood '
+                           'supply to the femur is partly cut off).',
+            'fact': 'Lifespan and Health'},
+           {'description': 'The American Eskimo has a friendly personality '
+                           'that shines through in every way. Although not '
+                           'exactly a great hunting or working dog, its alert '
+                           'temperament and loud bark do make it well-suited '
+                           'as a watchdog. But more than anything, this breed '
+                           'is an excellent companion that loves to be around '
+                           'people who shower it with plenty of attention. The '
+                           'dog expresses its essential traits through '
+                           'barking, playtime, tricks, and its exuberant '
+                           'personality. It’s a little hesitant to make new '
+                           'friends, but this can be overcome with some '
+                           'effort.',
+            'fact': 'Temperament'},
+           {'description': 'The American Eskimo is a high-maintenance dog that '
+                           'requires a lot of care and attention to satisfy '
+                           'its needs. If you’re not prepared to sacrifice '
+                           'time and expense on exercise, grooming, training, '
+                           'and nutrition, then this might not be the right '
+                           'dog breed for you. For best results, you should '
+                           'make sure the dog is fully trained as a puppy.',
+            'fact': 'Care'},
+           {'description': 'The American Eskimo should be fed on half a cup to '
+                           '1.5 cups of high-quality dry food divided in two '
+                           'separate meals (though the exact amount depends on '
+                           'the dog’s age, size, activity level, and '
+                           'metabolism). Dog treats are also a useful way to '
+                           'reinforce training. Obesity isn’t a significant '
+                           'problem for this highly energetic breed (at least '
+                           'until middle age), but you should nevertheless '
+                           'keep an eye on its weight and be prepared to '
+                           'adjust its calorie intake as needed.',
+            'fact': 'The Best Dog Food'},
+           {'description': 'With its friendly nature and playful personality, '
+                           'the American Eskimo loves to be around children. '
+                           'The standard American Eskimo is just the right '
+                           'size to interact with children. It isn’t large '
+                           'enough to intimidate them but isn’t small enough '
+                           'to be overly delicate. The only real problem is '
+                           'that the breed’s high energy and activity level '
+                           'might be startling to smaller children. That is '
+                           'why you should always supervise every interaction '
+                           'between your dog and your children and never leave '
+                           'them alone together.',
+            'fact': 'American Eskimo Dogs and Children'},
+           {'description': 'If you enjoy the American Eskimo, then you might '
+                           'want to check out these similar breeds.',
+            'fact': 'Dogs Similar to the American Eskimo'},
+           {'description': 'The American Eskimo ranks about in the middle in '
+                           'terms of popularity, having only been recognized '
+                           'by the American Kennel Club in 1995. However, it '
+                           'was a more common sight in road shows during the '
+                           '19th and early 20th centuries. An American Eskimo '
+                           'by the name of Stout’s Pal Pierre was a tightrope '
+                           'walker for the Barnum and Bailey Circus.',
+            'fact': 'Famous American Eskimo Dogs'},
+           {'description': 'Besides a few very apt names like Ghost, most '
+                           'American Eskimo names will be the same as any '
+                           'other dog breed. According to Rover.com, these are '
+                           'the most popular general dog names:',
+            'fact': 'Popular Names'}],
+ 'image_urls': ['https://a-z-animals.com/media/2019/10/American-Eskimo-Dog-close-up.jpg'],
+ 'name': 'American Eskimo Dog'}
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/zuchon/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/zuchon/>
+{'facts': [{'description': 'A full-grown Zuchon should be compact and sturdy. '
+                           'The male and female are similar in height and '
+                           'weight.',
+            'fact': '3 pros and cons of ownership'},
+           {'description': 'A full-grown Zuchon should be compact and sturdy. '
+                           'The male and female are similar in height and '
+                           'weight.',
+            'fact': 'Size and Weight'},
+           {'description': 'There are a few health issues to which the Zuchon '
+                           'is prone. Like the Shih Tzu, it may develop '
+                           'brachycephalic airway syndrome. Like the Bichon '
+                           'side of the family tree, it may be prone to atopic '
+                           'dermatitis. Other health concerns for the breed '
+                           'include:',
+            'fact': 'Common Health Issues'},
+           {'description': 'One trait breeders aim for in a Zuchon is '
+                           'personality. These dogs are happy and exuberant, '
+                           'always thrilled to see you, and they never meet a '
+                           'stranger. You can help maintain this winning '
+                           'disposition by socializing the pup around '
+                           'strangers and pets. At home, your Zuchon pup will '
+                           'get along well with everyone who lives there, '
+                           'although it may develop a favorite person, but it '
+                           'will coexist peacefully with other dogs and cats.',
+            'fact': 'Temperament'},
+           {'description': 'As a small breed, Zuchon dogs need to be watched '
+                           'carefully to avoid obesity. It is much easier to '
+                           'help it maintain a healthy weight than to lose '
+                           'weight. Even though it doesn’t need much food, '
+                           'breaking its meal into two servings each day gives '
+                           'it something to look forward to and helps '
+                           'discourage it from eating too quickly.',
+            'fact': 'Best Dog Food'},
+           {'description': 'The Zuchon, as a breed, has a hypoallergenic coat. '
+                           'It comes in a range of colors, including black, '
+                           'red, fawn, white, and cream. The color can be '
+                           'solid or particolored, and the fur may be silky or '
+                           'curly.',
+            'fact': 'Maintenance And Grooming'},
+           {'description': 'The average litter size for Zuhcons is four to '
+                           'five puppies. Breeders can cross a Shih Tzu and '
+                           'Bichon Frise or two Zuchons to produce the breed.',
+            'fact': 'Puppies'},
+           {'description': 'The breed’s buoyant personality and love of people '
+                           'make it a good match for families with children; '
+                           'however, it is important that the children and '
+                           'puppies, and even full-grown dogs. are closely '
+                           'supervised. Zuchons are small and cannot tolerate '
+                           'rough handling. Their love of people may prevent '
+                           'them from retreating when overwhelmed, so it is up '
+                           'to the adults to manage and supervise play.',
+            'fact': 'Children'},
+           {'description': 'There are other choices of toy dogs with similar '
+                           'temperaments and personalities. The obvious choice '
+                           'is one of the two breeds that breeders use to make '
+                           'up the Zuchon: the Shih Tzu or the Bichon Frise. '
+                           'There are other choices too, of course:',
+            'fact': 'Similar Dogs'},
+           {'description': 'Popular names for Zuchons are the following:',
+            'fact': 'Popular Names'}],
+ 'image_urls': ['https://a-z-animals.com/media/2021/10/Zuchon-header.jpg'],
+ 'name': 'Zuchon'}
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/zorse/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/zorse/>
+{'facts': [{'description': 'The Zorse is one of a number of equine hybrids '
+                           'that are known as Zebroids, which is the name '
+                           'given to an equine hybrid that has Zebra ancestry. '
+                           'The Zorse is the result of cross-breeding a '
+                           'generally male Zebra (stallion) with a female '
+                           'Horse (mare) to produce an animal that looks more '
+                           'like a Horse than a Zebra but has stripes.',
+            'fact': 'Classification and Evolution'},
+           {'description': 'The Zorse is very Horse-like in appearance since '
+                           'it inherits its shape, size, color and temperament '
+                           'from its mother. One of the Zorse’s most notable '
+                           'features is the dark stripes that are boldest on '
+                           'its legs and rear, along with also commonly being '
+                           'found on the rest of the body, neck and head. The '
+                           'Zorse is an animal that tends to have short, '
+                           'coarse fur that can range in color from tan to '
+                           'brown to black, with a darker mane and tail '
+                           '(although the exact characteristics of the Zorse '
+                           'are dependent on the breed of the female Horse). '
+                           'Zorses have a large head with a long muzzle, '
+                           'pricked-up ears and large, dark eyes with long '
+                           'eyelashes that help to stop things from getting '
+                           'into their eyes. Zorses have long, thin legs that '
+                           'are incredibly muscular and end in generally black '
+                           '(but sometimes white) colored hooves that are made '
+                           'from horn and allow the Zorse to be more sturdy '
+                           'when moving through various different terrains.',
+            'fact': 'Anatomy and Appearance'},
+           {'description': 'Unlike the case with the Zonkey where there have '
+                           'been a number of wild Zonkey sightings reported, '
+                           'it is almost impossible for a fully wild Zorse to '
+                           'occur without human intervention of some kind. '
+                           'There are three different sub-species of Zebra '
+                           'that are found in eastern and southern Africa on '
+                           'the vast open grasslands and savannah, but the '
+                           'incredibly rare wild horse is historically native '
+                           'to parts of Europe and Asia meaning that the two '
+                           'species would not come together naturally in the '
+                           'wild. In parts of Africa though where human '
+                           'settlements are either close to or intrude on the '
+                           'Zebra’s natural habitat, it is possible for a '
+                           'semi-wild Zorse to occur with the mating of a wild '
+                           'Zebra with a domestic horse. Nearly all of the '
+                           'world’s Zorses however, are found either in zoos '
+                           'or animal institutes around the world, with a '
+                           'number also being used as work horses particularly '
+                           'in parts of North America.',
+            'fact': 'Distribution and Habitat'},
+           {'description': 'In the wild, both Zebras and Horses roam '
+                           'throughout their natural environment in herds that '
+                           'can contain anywhere from two to more than two '
+                           'hundred individuals, making Zorses relatively '
+                           'sociable animals that prefer to live with other '
+                           'equines. Their temperaments however, are generally '
+                           'similar to those of their mother, including their '
+                           'strong flight response which is heightened by '
+                           'their Zebra side. Zorses are strong and muscular '
+                           'animals that spend the majority of their lives '
+                           'grazing, and along with the fact that theyhave '
+                           'better night vision than people, they are known to '
+                           'have almost 360 degree vision with the exception '
+                           'of a blind spot in front of their nose and '
+                           'directly behind them. The Zorse’s large, pricked '
+                           'ears give it incredible hearing, and their large '
+                           'nostrils mean that they also have a keen sense of '
+                           'smell.',
+            'fact': 'Behavior and Lifestyle'},
+           {'description': 'Zorses are animals that are produced when a male '
+                           'Zebra mates with a female Horse. After a gestation '
+                           'period that usually lasts for around 11 months, '
+                           'the female Horse gives birth to a single Zorse '
+                           'foal. Like the offspring of numerous other '
+                           'hoofed-herbivores, the Zorse is able stand up '
+                           'within an hour after birth and begins to canter a '
+                           'few hours after that. Although they are much '
+                           'smaller in size than their parents, the Zorse is '
+                           'born with incredibly long legs that are actually '
+                           'nearly their adult length already. As with other '
+                           'hybrid animals, including both Zonkeys and Mules, '
+                           'Zorses are sterile, meaning that although they '
+                           'still display normal breeding behavior, they are '
+                           'unable to produce offspring of their own. Zorses '
+                           'tend to be very healthy and hardy animals that can '
+                           'live to be more than 30 years old.',
+            'fact': 'Reproduction and Life Cycles'},
+           {'description': 'Like other equines including both Zebras and '
+                           'Horses, the Zorse is a herbivorous animal meaning '
+                           'that it only consumes plants and plant matter in '
+                           'order to gain all of the nutrients that it needs '
+                           'to survive. They spend almost all of their time '
+                           'grazing and like Horses, the Zorse has an advanced '
+                           'sense of taste which allows it to sort through '
+                           'grasses and grains in search of its most '
+                           'favourable foods. The Zorse primarily eats '
+                           'grasses, herbs and flowers that grow on ground '
+                           'level, along with leaves, fruits and berries that '
+                           'it has to pull from the trees or finds on the '
+                           'floor. Zorses generally will not eat plants that '
+                           'are poisonous, but are known to resort to eating '
+                           'plants that contain toxins when there is not an '
+                           'adequate supply of more nutritious food. Oddly '
+                           'enough the Zorse’s digestive system is designed to '
+                           'have food flowing through it almost continually, '
+                           'allowing them to graze nearly all day if they can.',
+            'fact': 'Diet and Prey'},
+           {'description': 'On the African plains, Zebras are an important '
+                           'source of food for a number of large carnivores '
+                           'including large felines such as Lions, Leopards, '
+                           'and Cheetahs along with Hunting Dogs and Hyenas. '
+                           'Zorses tend to be slightly larger in size than '
+                           'Zebras (depending on the size of their mother) and '
+                           'so would be a bit harder for these powerful '
+                           'predators to kill. In their native habitats, wild '
+                           'Horses are preyed upon by Wolf packs or Bears that '
+                           'try to single out a generally smaller or weaker '
+                           'individual from the herd. The biggest threat to '
+                           'both wild Horses and Africa’s Zebra populations, '
+                           'though, is habitat loss either in the form of '
+                           'growing human settlements or to clear land for '
+                           'agriculture, with populations declining throughout '
+                           'much of their natural ranges.',
+            'fact': 'Predators and Threats'},
+           {'description': 'The Zorse is a cross between a Zebra stallion and '
+                           'a domestic mare, but it is also possible to use a '
+                           'Zebra mare and a domestic stallion. This is not '
+                           'that common, however, because owners of valuable '
+                           'Zebra mares don’t want to waste a year of their '
+                           'breeding life trying to produce a hybrid when they '
+                           'could be producing a Zebra foal instead. In '
+                           'Africa, Zebras and Horses are often crossbred to '
+                           'create Zorses that are used as trekking animals to '
+                           'transport both people and goods up and down the '
+                           'mountains. As with their Zebra father, the pattern '
+                           'of the Zorse’s bold stripes is unique to each '
+                           'animal (much like the fingerprint of Humans), '
+                           'meaning that they can be easily distinguished from '
+                           'one another, and if they were found naturally in '
+                           'the wild it could give them some form of '
+                           'camouflage into their surrounding environment.',
+            'fact': 'Interesting Facts and Features'},
+           {'description': 'The Zorse was originally bred in England and '
+                           'Africa to try and produce a domestic Horse-like '
+                           'animal that was resistant to diseases spread by '
+                           'the Tse Tse Fly in Africa (Zebras have a natural '
+                           'resistance where domestic Donkeys and Horses do '
+                           'not). The experimental crosses were actually '
+                           'becoming popular until early in the 20th century '
+                           'when the ever-improving car industry meant that '
+                           'fewer and fewer people were using Horses for '
+                           'transport. At that point crossbreeding was largely '
+                           'abandoned until a revival of interest came in the '
+                           'early 1990s, with just about every breed of '
+                           'domestic horse imaginable being tried. Zorses are '
+                           'bred and kept today for riding, as work animals, '
+                           'and as attractions in zoos and animal institutes '
+                           'around the world.',
+            'fact': 'Relationship with Humans'},
+           {'description': 'Due to the fact that the Zorse is a crossbred '
+                           'animal and that it cannot continue a population, '
+                           'it is not listed by the IUCN. The three Zebra '
+                           'species, though, are all listed, with the Plains '
+                           'Zebra as Least Concern, the Mountain Zebra as '
+                           'Vulnerable, and the Grevy’s Zebra as Endangered. '
+                           'The Przewalski’s Horse, which is the only species '
+                           'of wild Horse remaining, is actually Critically '
+                           'Endangered with populations falling so low that '
+                           'reintroduction schemes began reintroducing captive '
+                           'individuals back into their natural environment.',
+            'fact': 'Conservation Status and Life Today'}],
+ 'image_urls': ['https://a-z-animals.com/media/animals/images/original/zorse.jpg'],
+ 'name': 'Zorse'}
+DEBUG: Crawled (200) <GET https://a-z-animals.com/animals/zebu/> (referer: https://a-z-animals.com/animals/)
+DEBUG: Scraped from <200 https://a-z-animals.com/animals/zebu/>
+{'facts': [{'description': 'The scientific name of the zebu is Bos taurus or '
+                           'Bos taurus indicus. Bos is the name of the genus '
+                           '(which includes both wild and domesticated cattle) '
+                           'and simply derives from the Latin word for ox or '
+                           'cattle. The species name taurus (which actually '
+                           'just means bull in Latin) includes every type of '
+                           'domesticated cattle on the planet. Traditionally, '
+                           'this name has also referred to the bull-like '
+                           'astrological sign and the Greek mythological '
+                           'figure. Indicus, the Greek term for India, refers '
+                           'only to the subspecies of zebu. The animal is '
+                           'considered to be different enough from the other '
+                           'cattle subspecies (which is called Bos taurus '
+                           'taurus) to warrant a separate subspecies '
+                           'designation.',
+            'fact': '5 Incredible Zebu Facts!'},
+           {'description': 'The scientific name of the zebu is Bos taurus or '
+                           'Bos taurus indicus. Bos is the name of the genus '
+                           '(which includes both wild and domesticated cattle) '
+                           'and simply derives from the Latin word for ox or '
+                           'cattle. The species name taurus (which actually '
+                           'just means bull in Latin) includes every type of '
+                           'domesticated cattle on the planet. Traditionally, '
+                           'this name has also referred to the bull-like '
+                           'astrological sign and the Greek mythological '
+                           'figure. Indicus, the Greek term for India, refers '
+                           'only to the subspecies of zebu. The animal is '
+                           'considered to be different enough from the other '
+                           'cattle subspecies (which is called Bos taurus '
+                           'taurus) to warrant a separate subspecies '
+                           'designation.',
+            'fact': 'Scientific Name'},
+           {'description': 'Compared to the standard taurine cattle with which '
+                           'most people are familiar, the zebu has many '
+                           'physical differences that attest to its separate '
+                           'origin. It is characterized by the prominent '
+                           'humped shoulders, drooping ears, loose skin '
+                           '(called a dewlap) around the neck, and horns that '
+                           'curve upward and back. Gray is the dominant color '
+                           'along the upper half of the body and the hooves '
+                           '(becoming black near the shoulders), while white '
+                           'dominates around the belly and legs. Other common '
+                           'colors include brown or red, sometimes occurring '
+                           'in a spotted pattern.',
+            'fact': 'Appearance'},
+           {'description': 'The zebu is a social species that gathers together '
+                           'in large herds for the entire year. Wild groups '
+                           'are led by a single bull and contain both females '
+                           'and their offspring. The herd has a hierarchical '
+                           'organization, and each member of the herd must '
+                           'yield to the one above it or else face reprisals '
+                           'and attacks. These hierarchies are usually based '
+                           'on factors such as age, sex, and dominance, and '
+                           'calves are typically born with the same group '
+                           'status of the mother. The hierarchy is usually '
+                           'quite stable, which serves to minimize conflicts, '
+                           'but dominant males can lose their status when they '
+                           'are dethroned by another male.',
+            'fact': 'Behavior'},
+           {'description': 'The zebu was originally domesticated in Southern '
+                           'Asia and became the dominant form of domesticated '
+                           'cattle in India. From there it spread through most '
+                           'of the global south, including the Middle East, '
+                           'Africa, South America, and parts of Europe and '
+                           'North America, where people crossed it with local '
+                           'cattle to create unique breeds. Zebus prefer the '
+                           'open grasslands and plains where food is most '
+                           'abundant, but they are used in many countries as '
+                           'draught animals to pull carts or power farm '
+                           'implements.',
+            'fact': 'Habitat'},
+           {'description': 'The zebu’s diet consists entirely of grasses, '
+                           'clovers, stems, flowers, and other plant material. '
+                           'To support itself, the zebu can consume around 150 '
+                           'pounds of vegetation a day (depending on the '
+                           'weight of the breed). It grazes up to eight hours '
+                           'and spends the rest of its time resting and '
+                           'chewing cud.',
+            'fact': 'Diet'},
+           {'description': 'Because of its size and herd-based lifestyle, the '
+                           'zebu has no natural predators except for the wolf, '
+                           'lion, bear, and a few other carnivores. These '
+                           'predators almost always prefer to attack a young, '
+                           'old, sick, or isolated zebu rather than a '
+                           'full-grown adult that has the protection of the '
+                           'herd. If threatened directly, the zebu can run '
+                           'away at speeds of up to 25 mph or stand its ground '
+                           'and fight with its horns. Domesticated cattle are '
+                           'obviously slaughtered in large numbers by humans, '
+                           'but because so many are bred every year, they are '
+                           'one of the most widespread mammalian species in '
+                           'the world.',
+            'fact': 'Predators and Threats'},
+           {'description': 'Because of the zebu’s hierarchical organization, '
+                           'the dominant male of the herd retains exclusive '
+                           'breeding rights to all of the females, and he has '
+                           'the ability to breed all year long instead of one '
+                           'specific season. Once impregnated by the dominant '
+                           'bull, the female carries a single calf for '
+                           'approximately nine months at a time. Because of '
+                           'the challenges presented by the birth process, she '
+                           'rarely produces twins.',
+            'fact': 'Reproduction, Babies, and Lifespan'},
+           {'description': 'It is estimated that there are more than 200 '
+                           'million zebus currently living on the planet. Most '
+                           'of these zebu breeds still reside in India, but '
+                           'there are millions more scattered throughout the '
+                           'rest of the world, particularly in Africa and '
+                           'Southeast Asia. Some breeds are considered more '
+                           'valuable or desirable than others, so population '
+                           'numbers can vary quite a bit by breed.',
+            'fact': 'Population'},
+           {'description': 'The miniature zebu is a very popular exhibit '
+                           'throughout the United States because of its '
+                           'approachable and docile temperament. For people in '
+                           'the area, it can be found at the children’s '
+                           'section of the Saint Louis Zoo and the barnyard '
+                           'section of Zoo New England. It is also a prominent '
+                           'exhibit at the Sunset Zoo in Manhattan, Kansas, '
+                           'the Hattiesburg Zoo in Mississippi, the Eerie Zoo '
+                           'in Pennsylvania, the Virginia Zoo in Norfolk, the '
+                           'Happy Hollow Park and Zoo in San Jose, and the '
+                           'Greater Vancouver Zoo in Canada. Besides the '
+                           'miniature zebu, the Peoria Zoo in Illinois keeps '
+                           'one of the larger zebu breeds in the contact barn '
+                           'section.',
+            'fact': 'In the Zoo'}],
+ 'image_urls': ['https://a-z-animals.com/media/zebu-3.jpg'],
+ 'name': 'Zebu'}
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7416,
+ 'downloader/request_count': 24,
+ 'downloader/request_method_count/GET': 24,
+ 'downloader/response_bytes': 1395920,
+ 'downloader/response_count': 24,
+ 'downloader/response_status_count/200': 23,
+ 'downloader/response_status_count/301': 1,
+ 'elapsed_time_seconds': 5.418419,
+ 'finish_reason': 'closespider_itemcount',
+ 'finish_time': datetime.datetime(2023, 11, 3, 3, 40, 35, 314693, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 5922087,
+ 'httpcompression/response_count': 23,
+ 'item_scraped_count': 21,
+ 'log_count/DEBUG': 48,
+ 'log_count/INFO': 10,
+ 'memusage/max': 68849664,
+ 'memusage/startup': 68849664,
+ 'request_depth_max': 1,
+ 'response_received_count': 23,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 23,
+ 'scheduler/dequeued/memory': 23,
+ 'scheduler/enqueued': 2796,
+ 'scheduler/enqueued/memory': 2796,
+ 'start_time': datetime.datetime(2023, 11, 3, 3, 40, 29, 896274, tzinfo=datetime.timezone.utc)}
+INFO: Spider closed (closespider_itemcount)
